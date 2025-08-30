@@ -1,4 +1,4 @@
-# ALSCLIP-INDOOR-SEGMENTATION
+# ALSCLIP-ALS point cloud segmentation
 
 ## 1. Requirements
 Code has been tested with Ubuntu 20.04, GCC 9.4.0, Python 3.9.12, PyTorch 1.11.0, CUDA 11.3 and RTX 3090.
