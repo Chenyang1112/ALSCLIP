@@ -1,0 +1,14 @@
+opencv-python
+pytorch-lightning
+easydict
+sharedarray
+torch_scatter
+scipy
+matplotlib
+tabulate
+open3d
+einops
+timm
+plyfile
+neptune-client
+pytorch-lightning
