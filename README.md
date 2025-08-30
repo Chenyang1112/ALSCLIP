@@ -1,4 +1,4 @@
-# EPCL-INDOOR-SEGMENTATION
+# ALSCLIP-INDOOR-SEGMENTATION
 
 ## 1. Requirements
 Code has been tested with Ubuntu 20.04, GCC 9.4.0, Python 3.9.12, PyTorch 1.11.0, CUDA 11.3 and RTX 3090.
@@ -20,36 +20,15 @@ In addition, you need to install CLIP according to [CLIP](https://github.com/ope
 
 ## 2. Datasets
 
-We use s3dis in this work. You can download the data from [PAConv](https://github.com/CVMI-Lab/PAConv/tree/main/scene_seg#dataset). After you download the dataset, remember to modify the DATA_PATH in `script/train.sh`.
-
-**Resulting dataset structure**
-
-```
-${data_dir}
-├── s3dis
-    ├── list
-    │   ├── s3dis_names.txt
-    │   ├── val5.txt
-    │   └── ...
-    ├── trainval
-    │   ├── 00001071.h5
-    │   └── ...
-    └── trainval_fullarea
-        ├── Area_1_conferenceRoom_1.npy
-        └── ...
-```
-## 3. Pretrain Model
-|  Task | Dataset | mAcc | mIoU | Download |      
-|  ----- | ----- | -----|  -----| -----|
-|  Indoor segmentation | S3DIS (Area5) | 77.8 | 71.5 |[here](https://drive.google.com/file/d/1PVyLlS4R1fUXs9HbLuN7OAMoMUlGXzTg/view?usp=drive_link) |
+We use DFC2019 dataset in this work. You can download the data from https://ieee-dataport.org/open-access/data-fusion-contest-2019-dfc2019
 
 ## 4. Usage
-Training on S3DIS, run:
+Training on DFC2019, run:
 ```
 cd scripts
 bash train.sh
 ```
-Testing on S3DIS, run:
+Testing on DFC2019, run:
 ```
 cd scripts
 bash test.sh
